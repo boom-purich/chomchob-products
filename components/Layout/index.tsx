@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <ThemeProvider theme={theme}>
                 <Container>
                     <Navbar />
-                    {children}
+                        {children}
                     <Footer />
                 </Container>
             </ThemeProvider>
