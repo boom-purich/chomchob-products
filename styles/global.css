@@ -1,0 +1,18 @@
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '../public/fonts/boon/boon.css';
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: Boon;
+    scroll-behavior: smooth;
+    background-color: #e5e5e5;
+};
+
+* {
+box-sizing: border-box;
+}
+
+#__next {
+    height: 100%;
+}
