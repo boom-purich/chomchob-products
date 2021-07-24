@@ -5,7 +5,8 @@
       "components/*":["components/*"],
       "styles/*":["styles/*"],
       "contexts/*":["contexts/*"],
-      "types/*":["types/*"]
+      "types/*":["types/*"],
+      "modules/*":["modules/*"]
     },
     "target": "es5",
     "lib": [
