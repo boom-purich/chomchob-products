@@ -1,4 +1,4 @@
-import Layout from 'components/Layout';
+import Layout from 'components/layout';
 import Meta from 'components/Meta';
 import 'styles/global.css';
 

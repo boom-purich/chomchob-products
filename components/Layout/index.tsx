@@ -1,26 +1,28 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { theme } from 'styles/theme';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import { LayoutStyled } from 'styles/Layout';
-import { NavbarProvider,useNavbar } from 'contexts';
+import Navbar from 'components/layout/navbar';
+import Footer from 'components/layout/footer';
+import { NavbarProvider } from 'contexts';
 
 const Layout = ({ children }) => {
-
-    const { openNavbar } = useNavbar();
 
     return (
         <NavbarProvider>
             <ThemeProvider theme={theme}>
-                <LayoutStyled>
+                <Container>
                     <Navbar />
                     {children}
                     <Footer />
-                </LayoutStyled>
+                </Container>
             </ThemeProvider>
         </NavbarProvider>
     );
 }
 
 export default Layout;
+
+const Container = styled.div`
+    width: 100%;
+    height: 100vh;
+`;
