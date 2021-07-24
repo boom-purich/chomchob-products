@@ -1,16 +1,13 @@
 import { GetServerSideProps } from 'next';
+import styled from 'styled-components';
 import { MainPageContainerStyled, MainPageContentStyled, ProductAmountStyled } from 'styles/MainPage';
-import ProductListComponent from 'components/ProductList';
+import HomeModule from 'modules/Home';
+import Products from 'components/products';
 import axios from 'axios';
 
 const Home = ({ products }) => {
   return (
-    <MainPageContainerStyled found={products.length > 0}>
-      <MainPageContentStyled>
-        <ProductAmountStyled>Products ({products.length})</ProductAmountStyled>
-        <ProductListComponent products={products}></ProductListComponent>
-      </MainPageContentStyled>
-    </MainPageContainerStyled>
+    <HomeModule products={products} />
   )
 
 };
@@ -25,3 +22,5 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 }
 
 export default Home;
+
+
