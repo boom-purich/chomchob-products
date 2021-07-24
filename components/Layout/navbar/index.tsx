@@ -1,8 +1,8 @@
 import { useState,useEffect,useRef } from 'react';
 import styled from 'styled-components';
 import { useNavbar } from 'contexts';
-import NavbarDesktop from 'components/layout/navbar/components/NavbarDesktop';
-import NavbarMobile from 'components/layout/navbar/components/NavbarMobile';
+import NavbarDesktop from './components/NavbarDesktop';
+import NavbarMobile from './components/NavbarMobile';
 
 const Navbar = () => {
 

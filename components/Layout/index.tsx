@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { theme } from 'styles/theme';
-import Navbar from 'components/layout/navbar';
-import Footer from 'components/layout/footer';
+import Navbar from './navbar';
+import Footer from './footer';
 import { NavbarProvider } from 'contexts';
 
 const Layout = ({ children }) => {
