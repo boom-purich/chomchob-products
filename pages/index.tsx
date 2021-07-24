@@ -1,8 +1,5 @@
 import { GetServerSideProps } from 'next';
-import styled from 'styled-components';
-import { MainPageContainerStyled, MainPageContentStyled, ProductAmountStyled } from 'styles/MainPage';
 import HomeModule from 'modules/Home';
-import Products from 'components/products';
 import axios from 'axios';
 
 const Home = ({ products }) => {
