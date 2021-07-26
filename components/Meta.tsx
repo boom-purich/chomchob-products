@@ -14,7 +14,7 @@ const Meta = ({title,keyword,description}) => {
 }
 
 Meta.defaultProps = {
-    title: 'Chomchob',
+    title: 'ChomCHOB | Product Lists',
     keyword: 'Website show product list.',
     description: 'Develop with Next.js framework by Purich Sangprasert.',
 }
